@@ -1,0 +1,62 @@
+@CHARSET "UTF8";
+#head-body a {
+	color: #FFF;
+}
+body {
+	background: #EFEFEF;
+}
+div#head-top {
+	width: 300px;
+	background: #636;
+	font-size: x-small;
+	color: #FFF;
+	padding: 3px 3px 0px 3px;
+	margin: 2px 3px 0px 3px;
+}
+div#head-body {
+	width: 300px;
+	background: #93C;
+	font-size: small;
+	padding: 3px 3px 0px 3px;
+	margin: 0px 3px 0px 3px;
+}
+table.head {
+	margin: 3px 3px 0px 3px;
+	border-spacing: 0px;
+}
+.head .now {
+	cursor: auto;
+	border-width: 0px;
+	padding: 3px 4px 0px 4px;
+	background-color: #EFEFEF;
+	font-size: small;
+	color: #222;
+}
+.head td {
+	cursor: pointer;
+	border-width: 0px;
+	padding: 3px 4px 0px 4px;
+	background-color: #93C;
+	font-size: small;
+	color: #FFF;
+}
+#body {
+	font-size: small;
+	margin:-12px 3px;
+	background: #FFF;
+}
+#body dl {
+	color: #333;
+	padding: 3px 3px;
+}
+#body dt{
+	font-weight: bold;
+	margin: 0 0 5px;
+	padding: 1px 0 1px 2px;
+	border-left: 8px solid #93C;
+	background: #A9C;
+	color: #FFF
+}
+#body dd	{
+	margin: 0 0 2px;
+}

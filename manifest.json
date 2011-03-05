@@ -1,0 +1,16 @@
+{
+ "name": "ttProject livechat extension",
+ "version": "0.1",
+ "description": "ttProject makes free livechat with RTMFP or RTMP",
+ "icons": {"16": "icon/liveIcon16.png",
+           "48": "icon/liveIcon48.png",
+          "128": "icon/liveIcon128.png"},
+ "browser_action": {
+  "default_icon": "icon/liveIcon19.png",
+  "default_popup": "html/popup.html"
+ },
+ "permissions": [
+  "notifications",
+  "http://*/*"
+ ]
+}
