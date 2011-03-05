@@ -63,6 +63,9 @@ table.head {
 input[type="text"] {
 	width: 284px;
 }
+input[type="text"].search {
+	background:transparent url(../sample_html/img/dot_anime_16x_g.gif) no-repeat bottom right;
+}
 textarea {
 	width: 282px;
 	height: 8em;

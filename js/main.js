@@ -88,22 +88,49 @@ function lobby() {
 }
 function myroom() {
 	$("#body").html(
-			"<dl>" +
+		"<dl>" +
 			"<dt>" +
-				"hello" +
+				"title" +
 			"</dt>" +
 			"<dd>" +
+				"<input type='text' />" +
+			"</dd>" +
+			"<dt>" +
+				"detail" +
+			"</dt>" +
+			"<dd>" +
+				"<textarea></textarea>" +
+			"</dd>" +
+			"<dt>" +
+				"pass phase" +
+			"</dt>" +
+			"<dd>" +
+				"<input type='text' />" +
+			"</dd>" +
+			"<dd>" +
+				"<input type='button' value='register'/>" +
+				"<input type='button' value='create'/>" +
 			"</dd>" +
 		"</dl>"
 	);	
 }
 function profile() {
 	$("#body").html(
-			"<dl>" +
+		"<dl>" +
 			"<dt>" +
-				"hogehoge" +
+				"name" +
 			"</dt>" +
 			"<dd>" +
+				"<input type='text' />" +
+			"</dd>" +
+			"<dt>" +
+				"profile" +
+			"</dt>" +
+			"<dd>" +
+				"<textarea></textarea>" +
+			"</dd>" +
+			"<dd>" +
+				"<input type='button' value='register'/>" +
 			"</dd>" +
 		"</dl>"
 	);	
