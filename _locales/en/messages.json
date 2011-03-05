@@ -1,0 +1,15 @@
+{
+ "name": {
+  "message": "livechat by ttProject",
+  "description": "describe the name of project"
+ },
+ "description": {
+  "message": "have free livechat with google chrome!",
+  "description": "description of extension."
+ }
+ "menu": {
+  "servers": {
+   "message": "servers"
+  }
+ }
+}

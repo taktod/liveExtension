@@ -1,0 +1,41 @@
+{
+ "name": {
+  "message": "ライブチャット (by ttProject)",
+  "description": "拡張の名前"
+ },
+ "description": {
+  "message": "中央サーバーなしでライブチャットするプログラム、輪を広げていこう",
+  "description": "拡張の詳細記述"
+ },
+
+ "menu_header": {
+  "message": "ライブチャット"
+ },
+ "menu_servers": {
+  "message": "サーバー"
+ },
+ "menu_lobby": {
+  "message": "一覧"
+ },
+ "menu_myroom": {
+  "message": "マイルーム"
+ },
+ "menu_profile": {
+  "message": "プロフィール"
+ },
+ "servers_selected": {
+  "message": "現在のサーバー"
+ },
+ "servers_list": {
+  "message": "サーバーを選択してください。"
+ },
+ "servers_add": {
+  "message": "新規サーバー"
+ },
+ "action_connect": {
+  "message": "接続する"
+ },
+ "action_add": {
+  "message": "追加する。"
+ }
+}
