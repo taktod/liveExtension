@@ -59,7 +59,7 @@ function server() {
 						"<option>rtmp://163.224.148.53/ttProject/</option>" +
 					"</select>" +
 					"<br />" +
-					"<input type='button' value='connect'/>" +
+					"<input type='button' value='" + c18.getMessage("action_connect") + "'/>" +
 				"</form>" +
 			"</dd>" +
 			"<dt>" +
@@ -69,7 +69,8 @@ function server() {
 				"<form>" +
 					"<input type='text' />" +
 					"<br />" +
-					"<input type='button' value='add'/>" +
+					"<input type='button' value='" + c18.getMessage("action_add") + "'/>" +
+					"<input type='button' value='" + c18.getMessage("action_reset") + "'/>" +
 				"</form>" +
 			"</dd>" +
 		"</dl>"
@@ -79,7 +80,7 @@ function lobby() {
 	$("#body").html(
 		"<dl>" +
 			"<dt>" +
-				"<span id='lobby-room'>rooms</span> | <span id='lobby-people' class='unselect'>people</span>" +
+				"<span id='lobby-room'>" + c18.getMessage("lobby_room") + "</span> | <span id='lobby-people' class='unselect'>" + c18.getMessage("lobby_people") + "</span>" +
 			"</dt>" +
 			"<dd>" +
 				"<input type='text' class='search'/>" +
@@ -100,7 +101,7 @@ function lobby() {
 					"<option>myroomN</option>" +
 				"</select>" +
 				"<br />" +
-				"<input type='button' value='enter' />" +
+				"<input type='button' value='" + c18.getMessage("action_enter") + "' />" +
 			"</dd>" +
 		"</dl>"
 	);	
@@ -117,26 +118,27 @@ function myroom() {
 	$("#body").html(
 		"<dl>" +
 			"<dt>" +
-				"title" +
+				c18.getMessage("myroom_title") +
 			"</dt>" +
 			"<dd>" +
 				"<input type='text' />" +
 			"</dd>" +
 			"<dt>" +
-				"detail" +
+				c18.getMessage("myroom_detail") +
 			"</dt>" +
 			"<dd>" +
 				"<textarea></textarea>" +
 			"</dd>" +
 			"<dt>" +
-				"pass phase" +
+				c18.getMessage("myroom_passphase") +
 			"</dt>" +
 			"<dd>" +
 				"<input type='text' />" +
 			"</dd>" +
 			"<dd>" +
-				"<input type='button' value='register'/>" +
-				"<input type='button' value='create'/>" +
+				"<input type='button' value='" + c18.getMessage("action_create") + "'/>" +
+				"<input type='button' value='" + c18.getMessage("action_register") + "'/>" +
+				"<input type='button' value='" + c18.getMessage("action_reset") + "'/>" +
 			"</dd>" +
 		"</dl>"
 	);	
@@ -145,19 +147,20 @@ function profile() {
 	$("#body").html(
 		"<dl>" +
 			"<dt>" +
-				"name" +
+				c18.getMessage("profile_name") +
 			"</dt>" +
 			"<dd>" +
 				"<input type='text' />" +
 			"</dd>" +
 			"<dt>" +
-				"profile" +
+				c18.getMessage("profile_profile") +
 			"</dt>" +
 			"<dd>" +
 				"<textarea></textarea>" +
 			"</dd>" +
 			"<dd>" +
-				"<input type='button' value='register'/>" +
+				"<input type='button' value='" + c18.getMessage("action_register") + "'/>" +
+				"<input type='button' value='" + c18.getMessage("action_reset") + "'/>" +
 			"</dd>" +
 		"</dl>"
 	);	

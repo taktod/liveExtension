@@ -4,7 +4,7 @@
   "description": "拡張の名前"
  },
  "description": {
-  "message": "中央サーバーなしでライブチャットするプログラム、輪を広げていこう",
+  "message": "ライブチャットするプログラム、輪を広げていこう",
   "description": "拡張の詳細記述"
  },
 
@@ -32,10 +32,43 @@
  "servers_add": {
   "message": "新規サーバー"
  },
+ "lobby_room": {
+  "message": "部屋"
+ },
+ "lobby_people": {
+  "message": "ユーザー"
+ },
+ "myroom_title": {
+  "message": "部屋名"
+ },
+ "myroom_detail": {
+  "message": "部屋の情報"
+ },
+ "myroom_passphase": {
+  "message": "入室パスワード"
+ },
+ "profile_name": {
+  "message": "名前"
+ },
+ "profile_profile": {
+  "message": "プロフィール"
+ },
  "action_connect": {
   "message": "接続する"
  },
  "action_add": {
-  "message": "追加する。"
+  "message": "追加する"
+ },
+ "action_enter": {
+  "message": "接続する"
+ },
+ "action_register": {
+  "message": "登録する"
+ },
+ "action_reset": {
+  "message": "リセット"
+ },
+ "action_create": {
+  "message": "開始する"
  }
 }
