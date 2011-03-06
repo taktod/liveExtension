@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+#head-body a {
+	color: #FFF;
+}
+body {
+	overflow-x: hidden;
+	background: #EFEFEF;
+}
+div#frame {
+	margin: 2px auto 2px auto;
+	width: 740px;
+	float: center;
+}
+div#head-top {
+	background: #636;
+	font-size: small;
+	color: #FFF;
+	padding: 3px 3px 0px 3px;
+}
+div#head-body {
+	background: #93C;
+	padding: 5px 3px 0px 3px;
+	color: #FFF;
+}
+#field {
+	margin-top: 2px;
+	background: #FFF;
+}
+#player {
+	background: #FFF;
+}
+#control {
+	width: 340px;
+}
+#comment {
+	float: right;
+	width: 400px;
+}
+#commentHeader {
+	font-weight: bold;
+	margin: 0 0 5px;
+	padding: 1px 0 1px 2px;
+	border-left: 8px solid #93C;
+	background: #A9C;
+	color: #FFF;
+	font-size: small;
+}
+#commentBody {
+	height: 291px;
+}
+#username {
+	font-weight: bold;
+	margin: 0 0 5px;
+	padding: 1px 0 1px 2px;
+	border-left: 8px solid #93C;
+	background: #A9C;
+	color: #FFF;
+	font-size: small;
+}
+#commentEntry {
+	margin-left:10px;
+	padding: 8px 0px 0px 0px;
+}
+#commentEnter {
+	float: right;
+	padding: 8px 10px 0px 2px;
+}
+#commentList {
+	width: 100%;
+	height: 100%;
+}

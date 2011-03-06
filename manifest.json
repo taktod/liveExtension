@@ -11,6 +11,7 @@
  },
  "permissions": [
   "notifications",
+  "tabs",
   "http://*/*"
  ],
  "default_locale": "ja"

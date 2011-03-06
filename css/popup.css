@@ -1,4 +1,4 @@
-@CHARSET "UTF8";
+@CHARSET "UTF-8";
 #head-body a {
 	color: #FFF;
 }
@@ -59,7 +59,7 @@ table.head {
 	padding: 1px 0 1px 2px;
 	border-left: 8px solid #93C;
 	background: #A9C;
-	color: #FFF
+	color: #FFF;
 }
 #body dd	{
 	margin: 0 0 2px;

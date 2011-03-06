@@ -1,7 +1,6 @@
 /**
  * 
  */
-var so = new SWFObject("../swf/livePlayer.swf", "live", "600", "400", "10.0", "#FFFFFF");
 var mode = "server";
 var c18 = chrome.i18n;
 $(function() {
@@ -9,6 +8,8 @@ $(function() {
 	$("#server").click(function() {
 		change("server");
 		server();
+//		webkitNotifications.createHTMLNotification("../html/notification.html").show();
+		chrome.tabs.create({url: "../html/room.html", selected: true});
 	});
 	$("#lobby").click(function() {
 		change("lobby");
