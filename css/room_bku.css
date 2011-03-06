@@ -22,18 +22,9 @@ div#head-body {
 	padding: 5px 3px 0px 3px;
 	color: #FFF;
 }
-
 #field {
 	margin-top: 2px;
 	background: #FFF;
-}
-div .header {
-	padding: 1px 0 1px 2px;
-	border-left: 8px solid #93C;
-	font-weight: bold;
-	background: #A9C;
-	color: #FFF;
-	font-size: small;
 }
 #player {
 	background: #FFF;
@@ -47,10 +38,15 @@ div .header {
 }
 #commentHeader {
 	font-weight: bold;
+	margin: 0 0 5px;
+	padding: 1px 0 1px 2px;
 	border-left: 8px solid #93C;
+	background: #A9C;
+	color: #FFF;
+	font-size: small;
 }
-#comment .body {
-	height: 314px;
+#commentBody {
+	height: 291px;
 }
 #username {
 	font-weight: bold;
@@ -61,11 +57,11 @@ div .header {
 	color: #FFF;
 	font-size: small;
 }
-#player .input {
+#commentEntry {
 	margin-left:10px;
 	padding: 8px 0px 0px 0px;
 }
-#player .enter {
+#commentEnter {
 	float: right;
 	padding: 8px 10px 0px 2px;
 }
