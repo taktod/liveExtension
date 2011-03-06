@@ -23,7 +23,7 @@ $(function() {
 		profile();
 	});
 	change("server");
-//	server();
+	server();
 });
 function language() {
 	$("#head-top").text(c18.getMessage("menu_header"));
@@ -77,14 +77,41 @@ function server() {
 }
 function lobby() {
 	$("#body").html(
-			"<dl>" +
+		"<dl>" +
 			"<dt>" +
-				"あいうえお" +
+				"<span id='lobby-room'>rooms</span> | <span id='lobby-people' class='unselect'>people</span>" +
 			"</dt>" +
 			"<dd>" +
+				"<input type='text' class='search'/>" +
+				"<select size=8>" +
+					"<option>myroomA</option>" +
+					"<option>myroomB</option>" +
+					"<option>myroomC</option>" +
+					"<option>myroomD</option>" +
+					"<option>myroomE</option>" +
+					"<option>myroomF</option>" +
+					"<option>myroomG</option>" +
+					"<option>myroomH</option>" +
+					"<option>myroomI</option>" +
+					"<option>myroomJ</option>" +
+					"<option>myroomK</option>" +
+					"<option>myroomL</option>" +
+					"<option>myroomM</option>" +
+					"<option>myroomN</option>" +
+				"</select>" +
+				"<br />" +
+				"<input type='button' value='enter' />" +
 			"</dd>" +
 		"</dl>"
 	);	
+	$("#lobby-room").click(function() {
+		$("#lobby-people").addClass("unselect");
+		$("#lobby-room").removeClass("unselect");
+	});
+	$("#lobby-people").click(function() {
+		$("#lobby-people").removeClass("unselect");
+		$("#lobby-room").addClass("unselect");
+	});
 }
 function myroom() {
 	$("#body").html(
