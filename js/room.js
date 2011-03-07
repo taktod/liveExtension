@@ -7,10 +7,11 @@ $(function(){
 	$("#enter").click(function() {
 		var child = document.createElement("option");
 		child.text = "aiueo" + counter;
-		var data = $("#commentList option").length;
+//		var data = $("#commentList option").length;
 //		$("#hoge").html("aiueoaiueoaiueo");
-		$("#hoge").html(data);
-//		var data = new Array($("#commentList").get(0));
+//		$("#hoge").html(data);
+		$("#commentList").get(0)[$("#commentList option").length] = child;
+		child.selected = true;
 //		data.unshift(child);
 //		for(i = 0;i < data.length;i ++) {
 //			$("#commentList").get(0)[i] = data[i];
