@@ -46,7 +46,7 @@ function serverInit() {
 	for(var i=0;i < 5;i ++) {
 		var serverid = "server" + i;
 		var server = localStorage[serverid];
-		if(server != "") {
+		if(server != "" && server != undefined) {
 			servers += "<option>" + server + "</option>";
 		}
 	}
@@ -159,6 +159,7 @@ function saveMyRoom() {
 	localStorage.myroom_title = $("#myroom_title").val();
 	localStorage.myroom_detail = $("#myroom_detail").val();
 	localStorage.myroom_passphase = $("#myroom_passphase").val();
+	chrome.extension.sendRequest({command: "reload"}, function(response) {});
 }
 function loadMyRoom() {
 	$("#myroom_title").val(localStorage.myroom_title);
@@ -199,6 +200,7 @@ function myroom() {
 	$("#action_create").click(function(){
 		saveMyRoom();
 		chrome.tabs.create({url: "../html/room.html", selected: true});
+		window.close();
 	});
 	$("#action_register").click(function(){
 		saveMyRoom();
@@ -210,6 +212,7 @@ function myroom() {
 function saveProfile() {
 	localStorage.profile_name = $("#profile_name").val();
 	localStorage.profile_profile = $("#profile_profile").val();
+	chrome.extension.sendRequest({command: "reload"}, function(response) {});
 }
 function loadProfile(){
 	$("#profile_name").val(localStorage.profile_name);
