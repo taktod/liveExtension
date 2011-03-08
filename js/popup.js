@@ -233,6 +233,14 @@ function profile() {
 			"<dd>" +
 				"<textarea id='profile_profile'></textarea>" +
 			"</dd>" +
+			"<dt>" +
+				"個人アクセス" +
+			"</dt>" +
+			"<dd>" +
+				"<input type='radio' name='access' value='anybody' />誰でも" +
+				"<input type='radio' name='access' value='friends' />友人のみ" +
+				"<input type='radio' name='access' value='none' />禁止" +
+			"</dd>" +
 			"<dd>" +
 				"<input type='button' id='action_register' value='" + c18.getMessage("action_register") + "'/>" +
 				"<input type='button' id='action_reset' value='" + c18.getMessage("action_reset") + "'/>" +
