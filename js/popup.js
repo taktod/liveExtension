@@ -234,7 +234,7 @@ function profile() {
 				"<textarea id='profile_profile'></textarea>" +
 			"</dd>" +
 			"<dt>" +
-				"個人アクセス" +
+				c18.getMessage("profile_access") +
 			"</dt>" +
 			"<dd>" +
 				"<input type='radio' name='access' value='anybody' />誰でも" +

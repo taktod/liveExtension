@@ -53,6 +53,9 @@
  "profile_profile": {
   "message": "プロフィール"
  },
+ "profile_access": {
+  "message": "アクセス"
+ },
  "action_connect": {
   "message": "接続する"
  },
