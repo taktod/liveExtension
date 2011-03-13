@@ -8,85 +8,25 @@
 <script type="text/javascript" src="../js/swfobject.js"></script>
 <script type="text/javascript">
 <!--
-	var so = new SWFObject("../swf/livePlayer.swf", "live", "340", "260", "10.1", "#FFFFFF");
-	$(function(){
-		so.write("player");
+$(function(){
+	$("#test").click(function() {
+//		for(var a in $("[name='a']")) {
+//			console.log(a);
+//		}
+		console.log($("[name='a']:checked").val());
+//		console.log($("[name='hoge']").val());
 	});
+});
 // -->
 </script>
 </head>
 <body>
-<div id="frame">
-	<div id="head-top">Live Ext. - [タイトル文]</div>
-	<div id="head-body">情報、わたしはこんなでそんなです。よろしく〜</div>
-	<div id="body">
-		<div id="field">
-			<div id="comment">
-				<div id="commentHeader">comment</div>
-				<div id="commentBody">
-					<select size="30" id="commentList">
-						<option>TodaTakahiko > こんにちは〜1</option>
-						<option>TodaTakahiko > こんにちは〜2</option>
-						<option>TodaTakahiko > こんにちは〜3</option>
-						<option>TodaTakahiko > こんにちは〜4</option>
-						<option>TodaTakahiko > こんにちは〜5</option>
-						<option>TodaTakahiko > こんにちは〜</option>
-						<option>TodaTakahiko > こんにちは6〜</option>
-						<option>TodaTakahiko > こんにちは7〜</option>
-						<option>TodaTakahiko > こんにちは〜1</option>
-						<option>TodaTakahiko > こんにちは〜2</option>
-						<option>TodaTakahiko > こんにちは〜3</option>
-						<option>TodaTakahiko > こんにちは〜4</option>
-						<option>TodaTakahiko > こんにちは〜5</option>
-						<option>TodaTakahiko > こんにちは〜</option>
-						<option>TodaTakahiko > こんにちは6〜</option>
-						<option>TodaTakahiko > こんにちは7〜</option>
-						<option>TodaTakahiko > こんにちは〜1</option>
-						<option>TodaTakahiko > こんにちは〜2</option>
-						<option>TodaTakahiko > こんにちは〜3</option>
-						<option>TodaTakahiko > こんにちは〜4</option>
-						<option>TodaTakahiko > こんにちは〜5</option>
-						<option>TodaTakahiko > こんにちは〜</option>
-						<option>TodaTakahiko > こんにちは6〜</option>
-						<option>TodaTakahiko > こんにちは7〜</option>
-						<option>TodaTakahiko > こんにちは〜1</option>
-						<option>TodaTakahiko > こんにちは〜2</option>
-						<option>TodaTakahiko > こんにちは〜3</option>
-						<option>TodaTakahiko > こんにちは〜4</option>
-						<option>TodaTakahiko > こんにちは〜5</option>
-						<option>TodaTakahiko > こんにちは〜</option>
-						<option>TodaTakahiko > こんにちは6〜</option>
-						<option>TodaTakahiko > こんにちは7〜</option>
-						<option>TodaTakahiko > こんにちは〜1</option>
-						<option>TodaTakahiko > こんにちは〜2</option>
-						<option>TodaTakahiko > こんにちは〜3</option>
-						<option>TodaTakahiko > こんにちは〜4</option>
-						<option>TodaTakahiko > こんにちは〜5</option>
-						<option>TodaTakahiko > こんにちは〜</option>
-						<option>TodaTakahiko > こんにちは6〜</option>
-						<option>TodaTakahiko > こんにちは7〜</option>
-						<option>TodaTakahiko > こんにちは〜1</option>
-						<option>TodaTakahiko > こんにちは〜2</option>
-						<option>TodaTakahiko > こんにちは〜3</option>
-						<option>TodaTakahiko > こんにちは〜4</option>
-						<option>TodaTakahiko > こんにちは〜5</option>
-						<option>TodaTakahiko > こんにちは〜</option>
-						<option>TodaTakahiko > こんにちは6〜</option>
-						<option>TodaTakahiko > こんにちは7〜</option>
-					</select>
-				</div>
-			</div>
-			<div id="player">
-			</div>
-			<div id="control">
-				<div id="username">Takahiko Toda</div>
-				<div id="commentEnter"><input type="button" value="enter" style="float:right;"/></div>
-				<div id="commentEntry"><input type="text" style="width:260px;"/></div>
-			</div>
-		</div>
-	</div>
-	<input type="radio" name="test" value="1" />
-	<input type="radio" name="test" value="2"/>
-</div>
+	<form>
+		<input type="radio" name="a" value="oiu" checked="checked"/>A
+		<input type="radio" name="a" value="hogyo"/>B
+		<input type="radio" name="a" value="shine you!!"/>C
+		<input type="text" name="hoge">
+		<input type="button" id="test"/>
+	</form>
 </body>
 </html>

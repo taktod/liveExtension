@@ -34,6 +34,9 @@ function setData() {
 	$("#head-top").text("Live Ext. - [" + localStorage.myroom_title + "]")
 	$("#head-body").text(localStorage.myroom_detail);
 	$("#userName").text(localStorage.profile_name);
+	if(localStorage.profile_name == undefined || localStorage.profile_name == "") {
+		$("#userName").text("名前を入力してください。");
+	}
 }
 function addComment() {
 	var child = document.createElement("option");

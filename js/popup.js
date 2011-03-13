@@ -224,6 +224,7 @@ function saveProfile() {
 function loadProfile(){
 	$("#profile_name").val(localStorage.profile_name);
 	$("#profile_profile").text(localStorage.profile_profile);
+//	$("#profile_none").attr("checked", "checked");
 }
 function profile() {
 	$("#body").html(
@@ -254,7 +255,6 @@ function profile() {
 			"</dd>" +
 		"</dl>"
 	);
-	$("#profile_name").checked("checked");
 	loadProfile();
 	$("#action_register").click(function(){
 		saveProfile();

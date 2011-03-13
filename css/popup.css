@@ -65,15 +65,31 @@ table.head {
 	margin: 0 0 2px;
 }
 input[type="text"] {
+	border-top: 1px solid #93C;
+	border-left: 1px solid #93C;
+	border-right: 1px solid #A9C;
+	border-bottom: 1px solid #A9C;
 	width: 284px;
 }
 input[type="text"].search {
-	background:transparent url(../image/search.png) no-repeat bottom right;
+	border-top: 1px solid #93C;
+	border-left: 1px solid #93C;
+	border-right: 1px solid #A9C;
+	border-bottom: 1px solid #A9C;
+	background: transparent url(../image/search.png) no-repeat bottom right;
 }
 textarea {
+	border-top: 1px solid #93C;
+	border-left: 1px solid #93C;
+	border-right: 1px solid #A9C;
+	border-bottom: 1px solid #A9C;
 	width: 282px;
 	height: 8em;
 }
 select {
+	border-top: 1px solid #93C;
+	border-left: 1px solid #93C;
+	border-right: 1px solid #A9C;
+	border-bottom: 1px solid #A9C;
 	width: 288px;
 }
