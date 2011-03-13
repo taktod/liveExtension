@@ -53,6 +53,18 @@
  "profile_profile": {
   "message": "Profile"
  },
+ "profile_access": {
+  "message": "Contact Permission"
+ },
+ "profile_anybody": {
+  "message": "Anybody"
+ },
+ "profile_friends": {
+  "message": "Friends only"
+ },
+ "profile_none": {
+  "message": "Nobody"
+ },
  "action_connect": {
   "message": "Connect"
  },

@@ -46,7 +46,7 @@ function serverInit() {
 	for(var i=0;i < 5;i ++) {
 		var serverid = "server" + i;
 		var server = localStorage[serverid];
-		if(server != "" && server != undefined) {
+		if(server != "" && server != undefined && server != "undefined") {
 			servers += "<option>" + server + "</option>";
 		}
 	}
@@ -142,7 +142,7 @@ function lobby() {
 					"<option>myroomN</option>" +
 				"</select>" +
 				"<br />" +
-				"<input type='button' value='" + c18.getMessage("action_enter") + "' />" +
+				"<input type='button' id='action_enter' value='" + c18.getMessage("action_enter") + "' />" +
 			"</dd>" +
 		"</dl>"
 	);	
@@ -153,6 +153,13 @@ function lobby() {
 	$("#lobby-people").click(function() {
 		$("#lobby-people").removeClass("unselect");
 		$("#lobby-room").addClass("unselect");
+	});
+	$("#action_enter").click(function() {
+		chrome.tabs.getAllInWindow(null, function(tabs){
+			for(i in tabs) {
+				console.log(tabs[i]);
+			}
+		});
 	});
 }
 function saveMyRoom() {
@@ -237,9 +244,9 @@ function profile() {
 				c18.getMessage("profile_access") +
 			"</dt>" +
 			"<dd>" +
-				"<input type='radio' name='access' value='anybody' />誰でも" +
-				"<input type='radio' name='access' value='friends' />友人のみ" +
-				"<input type='radio' name='access' value='none' />禁止" +
+				"<input type='radio' name='access' value='anybody' checked='checked'/>" + c18.getMessage("profile_anybody") +
+				"<input type='radio' name='access' value='friends' />" + c18.getMessage("profile_friends") +
+				"<input type='radio' name='access' id='profile_none' value='none' />" + c18.getMessage("profile_none") +
 			"</dd>" +
 			"<dd>" +
 				"<input type='button' id='action_register' value='" + c18.getMessage("action_register") + "'/>" +
@@ -247,6 +254,7 @@ function profile() {
 			"</dd>" +
 		"</dl>"
 	);
+	$("#profile_name").checked("checked");
 	loadProfile();
 	$("#action_register").click(function(){
 		saveProfile();

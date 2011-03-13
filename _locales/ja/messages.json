@@ -56,6 +56,15 @@
  "profile_access": {
   "message": "アクセス"
  },
+ "profile_anybody": {
+  "message": "誰でも"
+ },
+ "profile_friends": {
+  "message": "友人のみ"
+ },
+ "profile_none": {
+  "message": "拒否"
+ },
  "action_connect": {
   "message": "接続する"
  },
