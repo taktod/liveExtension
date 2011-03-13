@@ -1,0 +1,86 @@
+{
+ "name": {
+  "message": "livechat by ttProject",
+  "description": "describe the name of project"
+ },
+ "description": {
+  "message": "have free livechat with google chrome!",
+  "description": "description of extension."
+ },
+
+ "menu_header": {
+  "message": "Live Ext."
+ },
+ "menu_servers": {
+  "message": "Server"
+ },
+ "menu_lobby": {
+  "message": "Lobby"
+ },
+ "menu_myroom": {
+  "message": "My Room"
+ },
+ "menu_profile": {
+  "message": "Profile"
+ },
+ "servers_selected": {
+  "message": "Now using server..."
+ },
+ "servers_list": {
+  "message": "Select your new server..."
+ },
+ "servers_add": {
+  "message": "Add the new server..."
+ },
+ "lobby_room": {
+  "message": "Room"
+ },
+ "lobby_people": {
+  "message": "Users"
+ },
+ "myroom_title": {
+  "message": "Room name"
+ },
+ "myroom_detail": {
+  "message": "Detail for room"
+ },
+ "myroom_passphase": {
+  "message": "Entry pass phase."
+ },
+ "profile_name": {
+  "message": "Name"
+ },
+ "profile_profile": {
+  "message": "Profile"
+ },
+ "profile_access": {
+  "message": "Contact Permission"
+ },
+ "profile_anybody": {
+  "message": "Anybody"
+ },
+ "profile_friends": {
+  "message": "Friends only"
+ },
+ "profile_none": {
+  "message": "Nobody"
+ },
+ "action_connect": {
+  "message": "Connect"
+ },
+ "action_add": {
+  "message": "Add"
+ },
+ "action_enter": {
+  "message": "Enter"
+ },
+ "action_register": {
+  "message": "Register"
+ },
+ "action_reset": {
+  "message": "Reset"
+ },
+ "action_create": {
+  "message": "Create"
+ }
+}
