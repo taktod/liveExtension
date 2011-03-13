@@ -207,12 +207,13 @@ function myroom() {
 function saveProfile() {
 	localStorage.profile_name = $("#profile_name").val();
 	localStorage.profile_profile = $("#profile_profile").val();
+	localStorage.profile_contact = $("[name='access']:checked").val();
 	chrome.extension.sendRequest({command: "reload"}, function(response) {});
 }
 function loadProfile(){
 	$("#profile_name").val(localStorage.profile_name);
 	$("#profile_profile").text(localStorage.profile_profile);
-//	$("#profile_none").attr("checked", "checked");
+	$("[name='access']").val([localStorage.profile_contact]);
 }
 function profile() {
 	$("#body").html(
@@ -233,9 +234,9 @@ function profile() {
 				c18.getMessage("profile_contact") +
 			"</dt>" +
 			"<dd>" +
-				"<input type='radio' name='access' value='anybody' checked='checked'/>" + c18.getMessage("profile_anybody") +
-				"<input type='radio' name='access' value='friends' />" + c18.getMessage("profile_friends") +
-				"<input type='radio' name='access' id='profile_none' value='none' />" + c18.getMessage("profile_none") +
+				"<input type='radio' name='access' value='anybody'/>" + c18.getMessage("profile_anybody") +
+				"<input type='radio' name='access' value='friends'/>" + c18.getMessage("profile_friends") +
+				"<input type='radio' name='access' value='none'/>" + c18.getMessage("profile_none") +
 			"</dd>" +
 			"<dd>" +
 				"<input type='button' id='action_register' value='" + c18.getMessage("action_register") + "'/>" +
