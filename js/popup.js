@@ -128,18 +128,6 @@ function lobby() {
 				"<select size=8>" +
 					"<option>myroomA</option>" +
 					"<option>myroomB</option>" +
-					"<option>myroomC</option>" +
-					"<option>myroomD</option>" +
-					"<option>myroomE</option>" +
-					"<option>myroomF</option>" +
-					"<option>myroomG</option>" +
-					"<option>myroomH</option>" +
-					"<option>myroomI</option>" +
-					"<option>myroomJ</option>" +
-					"<option>myroomK</option>" +
-					"<option>myroomL</option>" +
-					"<option>myroomM</option>" +
-					"<option>myroomN</option>" +
 				"</select>" +
 				"<br />" +
 				"<input type='button' id='action_enter' value='" + c18.getMessage("action_enter") + "' />" +
@@ -242,7 +230,7 @@ function profile() {
 				"<textarea id='profile_profile'></textarea>" +
 			"</dd>" +
 			"<dt>" +
-				c18.getMessage("profile_access") +
+				c18.getMessage("profile_contact") +
 			"</dt>" +
 			"<dd>" +
 				"<input type='radio' name='access' value='anybody' checked='checked'/>" + c18.getMessage("profile_anybody") +
